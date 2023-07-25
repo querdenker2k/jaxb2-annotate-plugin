@@ -59,8 +59,8 @@
 			<xs:element name="customBooleanProperty" type="xs:boolean" minOccurs="0">
 				<xs:annotation>
 					<xs:appinfo>
-						<annox:annotate target="field">@javax.xml.bind.annotation.XmlElement(type=java.lang.Boolean.class)</annox:annotate>
-						<annox:annotate target="field">@javax.xml.bind.annotation.XmlSchemaType(name="boolean")</annox:annotate>
+						<annox:annotate target="field">@jakarta.xml.bind.annotation.XmlElement(type=java.lang.Boolean.class)</annox:annotate>
+						<annox:annotate target="field">@jakarta.xml.bind.annotation.XmlSchemaType(name="boolean")</annox:annotate>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>

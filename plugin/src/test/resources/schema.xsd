@@ -284,7 +284,7 @@
 			<xs:element name="x" minOccurs="0">
 				<xs:annotation>
 					<xs:appinfo>
-						<annox:removeAnnotation class="javax.xml.bind.annotation.XmlElement" target="field"/>
+						<annox:removeAnnotation class="jakarta.xml.bind.annotation.XmlElement" target="field"/>
 						<jaxb:property name="y"/>
 					</xs:appinfo>
 				</xs:annotation>

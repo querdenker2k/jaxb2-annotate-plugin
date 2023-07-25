@@ -44,7 +44,7 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
+			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-xjc</artifactId>
 		</dependency>
 		<dependency>
@@ -65,7 +65,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
+			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-runtime</artifactId>
 		</dependency>
 		<dependency>

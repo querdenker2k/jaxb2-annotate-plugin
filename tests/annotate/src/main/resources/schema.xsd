@@ -52,10 +52,10 @@
 			<xsd:appinfo>
 				<annox:annotate>@java.lang.SuppressWarnings({"unchecked","rawtypes"})</annox:annotate>
 				<annox:annotatePackage>
-					@javax.xml.bind.annotation.XmlSchema(
-						elementFormDefault = javax.xml.bind.annotation.XmlNsForm.UNQUALIFIED,
+					@jakarta.xml.bind.annotation.XmlSchema(
+						elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.UNQUALIFIED,
 						xmlns = {
-							@javax.xml.bind.annotation.XmlNs(prefix = "a", namespaceURI = "")
+							@jakarta.xml.bind.annotation.XmlNs(prefix = "a", namespaceURI = "")
 						})
 				</annox:annotatePackage>
 			</xsd:appinfo>
@@ -102,7 +102,7 @@
 		<xsd:annotation>
 			<xsd:appinfo>
 				<annox:annotate >
-					<annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="literal"/>
+					<annox:annotate annox:class="jakarta.xml.bind.annotation.XmlRootElement" name="literal"/>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>

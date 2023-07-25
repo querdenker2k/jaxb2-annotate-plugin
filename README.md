@@ -94,10 +94,10 @@ Or in binding files:
 
 	<jaxb:bindings schemaLocation="schema.xsd" node="/xs:schema">
 		<jaxb:bindings node="xs:complexType[@name='issueJIIB39CType']">
-			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="IssueJIIB39CType")</annox:annotateClass>
+			<annox:annotateClass>@jakarta.xml.bind.annotation.XmlRootElement(name="IssueJIIB39CType")</annox:annotateClass>
 		</jaxb:bindings>
 		<jaxb:bindings node="xs:complexType[@name='issueJIIB39CType']/xs:attribute[@name='test']">
-			<annox:annotate target="field">@javax.xml.bind.annotation.XmlAttribute(required=false, name="test")</annox:annotate>
+			<annox:annotate target="field">@jakarta.xml.bind.annotation.XmlAttribute(required=false, name="test")</annox:annotate>
 		</jaxb:bindings>
 	</jaxb:bindings>
 
@@ -155,7 +155,7 @@ You can remove annotations using customizations directly in schema:
 	<xsd:complexType name="FooType">
 		<xsd:annotation>
 			<xsd:appinfo>
-				<annox:removeAnnotation class="javax.xml.bind.annotation.XmlType" />
+				<annox:removeAnnotation class="jakarta.xml.bind.annotation.XmlType" />
 			</xsd:appinfo>
 		</xsd:annotation>
 		<xsd:sequence>
@@ -163,7 +163,7 @@ You can remove annotations using customizations directly in schema:
 			<xsd:element name="foobar" type="xsd:string">
 				<xsd:annotation>
 					<xsd:appinfo>
-						<annox:removeAnnotation class="javax.xml.bind.annotation.XmlElement" target="field" />
+						<annox:removeAnnotation class="jakarta.xml.bind.annotation.XmlElement" target="field" />
 					</xsd:appinfo>
 				</xsd:annotation>
 			</xsd:element>
@@ -188,10 +188,10 @@ Or in binding files:
 
 	<jaxb:bindings schemaLocation="schema.xsd" node="/xs:schema">
 		<jaxb:bindings node="xs:complexType[@name='FooType']">
-			<annox:removeAnnotation class="javax.xml.bind.annotation.XmlType" />
+			<annox:removeAnnotation class="jakarta.xml.bind.annotation.XmlType" />
 		</jaxb:bindings>
 		<jaxb:bindings node="xs:complexType[@name='FooType']//xs:element[@name='foobar']">
-			<annox:removeAnnotation class="javax.xml.bind.annotation.XmlElement" target="field" />
+			<annox:removeAnnotation class="jakarta.xml.bind.annotation.XmlElement" target="field" />
 		</jaxb:bindings>
 	</jaxb:bindings>
 

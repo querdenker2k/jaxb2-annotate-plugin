@@ -51,7 +51,7 @@
 	</modules>
 	<dependencies>
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
+			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-core</artifactId>
 		</dependency>
 		<dependency>

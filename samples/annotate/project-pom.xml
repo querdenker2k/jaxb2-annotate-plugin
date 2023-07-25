@@ -39,7 +39,7 @@
 	<name>JAXB2 Annotate Plugin - Sample [annotate-maven]</name>
 	<dependencies>
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
+			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-runtime</artifactId>
 			<version>${jaxb.version}</version>
 			<scope>provided</scope>

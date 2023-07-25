@@ -166,12 +166,12 @@
 	</profiles>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jaxb.version>2.3.7</jaxb.version>
-		<jaxb-core.version>2.3.0.1</jaxb-core.version>
-		<jaxb-api.version>2.3.3</jaxb-api.version>
+		<jaxb.version>3.0.2</jaxb.version>
+		<jaxb-core.version>3.0.2</jaxb-core.version>
+		<jaxb-api.version>3.0.1</jaxb-api.version>
 		<activation.version>1.2.2</activation.version>
 		<maven-jaxb2-plugin.version>0.15.3</maven-jaxb2-plugin.version>
-		<annox.version>1.0.2</annox.version>
+		<annox.version>1.0.3-SNAPSHOT</annox.version>
 		<jaxb2-basics.version>0.12.0</jaxb2-basics.version>
 	</properties>
 	<dependencies>
@@ -230,9 +230,9 @@
 			</dependency>
 			<!-- Maven JAXB2 Plugin -->
 			<dependency>
-				<groupId>org.jvnet.jaxb2.maven2</groupId>
-				<artifactId>maven-jaxb23-plugin</artifactId>
-				<version>${maven-jaxb2-plugin.version}</version>
+				<groupId>com.helger.maven</groupId>
+				<artifactId>jaxb30-maven-plugin</artifactId>
+				<version>0.16.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
@@ -252,17 +252,17 @@
 				<version>${jaxb-api.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
+				<groupId>com.sun.xml.bind</groupId>
 				<artifactId>jaxb-core</artifactId>
 				<version>${jaxb-core.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
+				<groupId>com.sun.xml.bind</groupId>
 				<artifactId>jaxb-runtime</artifactId>
 				<version>${jaxb.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.glassfish.jaxb</groupId>
+				<groupId>com.sun.xml.bind</groupId>
 				<artifactId>jaxb-xjc</artifactId>
 				<version>${jaxb.version}</version>
 			</dependency>
@@ -368,8 +368,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.7.0</version>
 					<configuration>
-						<source>1.7</source>
-						<target>1.7</target>
+						<source>11</source>
+						<target>11</target>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -469,9 +469,9 @@
 					<version>3.1.0</version>
 				</plugin>
 				<plugin>
-					<groupId>org.jvnet.jaxb2.maven2</groupId>
-					<artifactId>maven-jaxb2-plugin</artifactId>
-					<version>${maven-jaxb2-plugin.version}</version>
+					<groupId>com.helger.maven</groupId>
+					<artifactId>jaxb30-maven-plugin</artifactId>
+					<version>0.16.1</version>
 					<executions>
 						<execution>
 							<id>generate</id>
